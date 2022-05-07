@@ -6,8 +6,7 @@
 double pown(double value, uint16_t n) {
   if (n == 0) {
     return 1;
-    }
-    else {
+    } else {
     double ans = value;
     for (uint64_t j = 1; j < n; j++)
         ans *= value;
@@ -38,7 +37,7 @@ double calcItem(double x, uint16_t n) {
 double expn(double x, uint16_t count) {
   double exp = 0;
     for (uint64_t j = 0; j <= count; j++)
-        exp += calcItem(x, i);
+        exp += calcItem(x, j);
     return exp;
 }
 
